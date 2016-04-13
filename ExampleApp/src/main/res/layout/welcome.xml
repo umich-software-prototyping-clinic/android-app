@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Welcome"
+        android:paddingTop="50dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtwelcome"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/listmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtuser"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="User List:"/>
+
+    <TextView
+        android:id="@+id/userlist"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/listmsg"
+        android:scrollbars="vertical"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listmsg">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="Username"></TextView>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="Email"></TextView>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="cmth"></TextView>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="cmtholm@gmail.com"></TextView>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="ng"></TextView>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="cmtholm@umich.edu"></TextView>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="unm"></TextView>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="holm.connor@gmail.com"></TextView>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/LogoutBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"/>
+
+        <Button
+            android:id="@+id/changepassword"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="Change Password"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"/>
+
+        <Button
+            android:id="@+id/printpage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="Print Text Page"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

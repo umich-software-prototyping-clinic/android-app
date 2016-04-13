@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press to Print"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/LogoutBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"/>
+
+        <Button
+            android:id="@+id/changepassword"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="Change Password"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"/>
+
+        <Button
+            android:id="@+id/userlist"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="User List"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:inputType="textMultiLine"
+        android:text=""
+        android:hint="Enter Text to Be Printed"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

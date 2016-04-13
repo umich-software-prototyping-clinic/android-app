@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/namemsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Thanks"
+        android:textSize="25sp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/emailmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namemsg"
+        android:paddingTop="15dp"
+        android:text="An email has been sent to:" />
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailmsg"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtverify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Verify"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/LoginBtn" />
+
+</RelativeLayout>
